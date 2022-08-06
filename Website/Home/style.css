@@ -1,0 +1,250 @@
+body {
+  margin: 1pc;
+  font-family: 'Neue Power', sans-serif;
+  background: url("") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #000;
+}
+
+a {
+  color: #000;
+}
+
+html { 
+ 
+}
+
+input::placeholder {
+    font-weight: 300;                                                
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+.dots img {
+
+}
+
+.backg {
+  border-radius: 1pc;
+  width: 15pc;
+  height: 4pc;
+  -webkit-backdrop-filter:  blur(50px);
+  -moz-backdrop-filter:  blur(50pc);
+  backdrop-filter:  blur(50px);                                 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.05);
+  visibility: ;
+}
+
+
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: ;
+}
+
+.topnav a {
+  float: left;
+  font-weight: ;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+    font-size: 2pc;
+    color: black;
+
+}
+
+
+
+
+
+.topnav a.time {
+  font-weight: 500;
+  font-family: 'Neue Power', sans-serif;\
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: none;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+   padding: 15px 16px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.schedulebox {
+  font-weight: bold;
+  backdrop-filter:  blur(50px);                                 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.05);
+  width: 40pc;
+  height: 16pc;
+  border-radius: 2pc;
+  text-align: left;
+   -webkit-backdrop-filter: blur(50px);
+   -moz-backdrop-filter:  blur(50pc);
+}
+
+.meetbox {
+    background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter:  blur(50px); 
+  -webkit-backdrop-filter: blur(50px);
+  -moz-backdrop-filter:  blur(50pc);
+  width: 19.5pc;
+  font-family: 'Montserrat', sans-serif;
+  float: left;
+  font-weight: 600;                                                
+  height: 16.5pc;
+  border-radius: 2pc;
+  margin-top: 1pc;
+}
+
+.mainbox {
+  width: 40pc;
+  height: auto;
+  margin-top: 1.5pc;
+   
+}
+
+.codebox {
+    background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter:  blur(50px); 
+     -webkit-backdrop-filter: blur(50px);
+     -moz-backdrop-filter:  blur(50pc);
+  font-family: 'Montserrat', sans-serif;
+
+  font-weight: 600;                                                
+  width: 19.5pc;
+  float: right;
+  height: 16.5pc;
+  border-radius: 2pc;
+  margin-top: 1pc;
+}
+
+input {
+  text-align: center;
+  border: none;
+  height: 3pc;
+  width: 14pc;
+  border-radius: 20px;
+  margin: 0.8pc;
+  font-size: 1pc;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.05); 
+  font-weight: 600;
+  font-family: 'Neue Power', sans-serif;
+  color: #000;
+
+}
+
+
+.scheduleTitle {
+  padding-left: 25px;
+  padding-top: 30px;
+}
+
+.meetbox p {
+  font-size: 1.6pc;
+  padding: 2pc;
+
+}
+
+.codebox p {
+  font-size: 1.6pc;
+  padding: 2pc;
+
+}
+
+.imgButton button {
+
+ border:  none;
+height: 2pc;
+width: 2pc;
+border-radius: 3pc;
+margin: 0.1pc;
+cursor: pointer;
+margin-top: 1pc;
+}
+
+.button {
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2pc;
+  margin: 1pc 10px;
+  width: 9pc;
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: 600;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter:  blur(50px); 
+  -webkit-backdrop-filter: blur(50px);
+  -moz-backdrop-filter:  blur(50pc);
+
+}
+
+.symbol {
+  display: inline-block;
+  margin-right:  5px;
+  margin-top: 3px;
+}
+
+.list {
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 1.2pc;
+  font-weight: 600;
+
+}
+
+.listdet {
+  margin: 1.5pc;
+}
+
+.startmeet {
+  border: none;
+  background: #0075F9;
+  font-family: 'Montserrat', sans-serif;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2pc;
+  margin: 1pc 10px;
+  width: 13pc;
+  cursor: pointer;
+  color: white;
+  border-radius: 20px;
+  font-weight: 500;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://fonts.cdnfonts.com/css/dot-matrix" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/neue-power" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylelog.css">
+	<title>*** FILL THIS LATER ON ***</title>
+
+	<script type="text/javascript">
+
+		if (navigator.onLine == false) {
+
+  		location.replace("../noInternet/internet.html");
+
+		}
+
+		
+		function validateForm() {
+
+		
+			var x = document.form1.eme.value;
+			var y = document.form1.usrn.value; 
+			var z = document.form1.pass.value;
+			var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+			if (x==null||x=="") {
+				alert("Fill your email");
+				document.form1.eme.focus();
+				return false;
+			}
+
+			if (y==null||y=="") {
+				alert("Fill your username");
+				document.form1.eme.focus();
+				return false;
+			}
+
+
+			if (z==null||z=="") {
+				alert("Fill your password");
+				document.form1.eme.focus();
+				return false;
+			}
+
+			if (document.form1.eme.value.match(validRegex)) {
+				return true; 
+			} else {
+				alert("Please write a valid email address");
+				return false;
+			}
+
+
+
+		}
+
+	</script>
+</head>
+<body>
+<section><div class="center-log">
+	<div class="main">
+		<div class="logo">
+			<img src="../../logo/design/logos.png">
+		</div>
+
+
+		<div class="title"><p>Log    in</p></div>
+
+		<div class="login">
+		<div class="inputs">
+			<form action="../Home/home.html" onsubmit="return validateForm();" name="form1" method="get">
+
+			<input type="text" name="eme" placeholder="Email" id="email"> <br>
+
+			<input type="text" name="usrn" placeholder="Username"> <br>
+
+			<input type="password" name="pass" placeholder="Password"><br>
+
+			<a class="forgot" href="">forgot password?</a>
+			
+			<input value="Log In" class="button" type="submit" name="submit" placeholder="">
+
+		</form>
+		</div>
+		<div class="sign-up"><a href="../signUp/signup.html">New to this? Sign up</a></div>
+		</div>
+	</div>
+</div>
+</section>
+</body>
+</html>

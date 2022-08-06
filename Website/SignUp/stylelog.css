@@ -1,0 +1,102 @@
+.title {
+	font-size: 3pc;
+	font-family: 'Dot Matrix', sans-serif; 
+	text-align: center;
+	font-weight: 100;
+}
+
+.login {
+	font-family: 'Montserrat', sans-serif;
+}
+
+input::placeholder {
+	color: #535353;
+}
+
+.forgot {
+	margin-left: 10pc;
+	text-decoration: none;
+	color: #ADADAD;
+	font-weight: 500;
+	font-size: 0.9pc;
+}
+
+.button {
+border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2pc 30px;
+  width: 9pc;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: #0EDE6A;
+  font-weight: bold;
+}
+
+a {
+	text-align: center;
+	color: black;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+
+
+section {
+	
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+   
+
+}
+
+.inputs {
+	text-align: center;
+
+}
+
+.logo img {
+	width: 5pc;
+}
+
+.loginbutt {
+	width: 10pc;
+}
+
+input {
+	text-align: center;
+	border: solid 2px #EFEFEF;
+	background-color: #;
+	height: 40px;
+	width: 18pc;
+	border-radius: 10px;
+	margin: 0.8pc;
+	font-size: 0.9pc;
+	font-weight: 600;
+}
+
+.sign-up {
+	font-weight: 600;
+	font-size: 1.1pc;
+	padding: 40px;
+}
+
+.main {
+
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+	padding:  4pc;
+}
+
+h1 {
+	text-align: center;
+}

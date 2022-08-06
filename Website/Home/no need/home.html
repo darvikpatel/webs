@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylehome.css">
+	<title>Home</title>
+</head>
+<body onload="currentTime();">
+
+<div class="topnav">
+	
+  <a class="logo" href="#home"><img src="../../logo/design/logo.png"></a>
+  
+  <center>
+  	<p id="clock" class="time">time</p>
+</center>
+
+  
+  <a href="#about"  class="right">About</a>
+  
+</div>
+
+
+
+
+	<div class="mainbox">
+<div class="schedulebox">csd</div>
+<center>
+<div class="meetbox">csdcsd</div>
+<div class="codebox">csdcsdc</div>
+</center>
+	</div>
+
+
+
+
+
+
+
+
+
+</body>
+<script type="text/javascript">
+
+	function currentTime() {
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
+
+  if(hh === 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + " " + session;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ currentTime() }, 1000);
+}
+
+currentTime();
+
+
+	
+</script>
+</html>

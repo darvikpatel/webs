@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<link href="http://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/neue-power" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/dot-matrix" rel="stylesheet">
+
+                
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body onload="currentTime();">
+
+
+<!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a id="clock" class="time"></a>
+  </div>
+  
+  <!-- Left-aligned links (default) -->
+  <a href="home.html"><img width="60" src="../../logo/design/logos.png"></a>
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+
+    <div class="backg">
+      <div class="imgButton">
+        <center>
+        <button onclick="normal()" style="background-color: white;"></button>
+        <button onclick="rock()" style="background-color: #B7613E;"></button>
+        <button onclick="flowers()" style="background-color: #FFB13C;"></button>
+        <button onclick="more()" style="background-color: #1C80E8;"></button>
+        <button onclick="moretho()" style="background-color: #310A14;"></button>
+      </center>
+      </div>
+    </div>
+      
+  </div>
+
+</div>
+
+<center>
+<a href="../Contacts/contact.html" class="button cont"><img class="symbol" width="15" src="resources/contacts.png">  Contacts</a> 
+<a href="../Schedule/schedule.html" class="button sche"><img class="symbol" width="15" src="resources/calendar.png">   Schedule</a>
+
+
+	<div id="bb" class="mainbox">
+<div class="schedulebox"><h1 class="scheduleTitle">Schedule</h1> 
+
+<div class="list">
+
+<div class="listdet"><img class="symbol" width="15" src="resources/bluedot.png"> <a class="phy" href="">Physics</a> 10:00am - 11:00am</div>
+<div class="listdet"><img class="symbol" width="15" src="resources/yellowdot.png"> <a class="chem" href="../Schedule/schedule.html">Chemistry</a> 11:30am - 12:30pm</div>
+<div class="listdet"><img class="symbol" width="15" src="resources/greendot.png"> <a class="game" href="../login.html/login.html">Gaming</a> 11:00pm - 1:00am</div>
+
+  
+</div>
+
+</div>
+
+<center>
+<div class="meetbox"><p>Start an <br> instant meeting</p>
+
+<button class="startmeet">Start</button>
+
+</div>
+
+
+<div class="codebox"><p>Enter code <br> to join</p>
+
+  <form method="get" id="formID" action="https://www.apple.com" name="codeID">
+
+<input id="codeIn" type="text" name="codeName" placeholder="Enter a link or code">
+
+</form>
+
+</div>
+</center>
+	</div>
+
+</center>
+
+</body>
+
+<script type="text/javascript">
+
+
+
+
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+
+  if (navigator.onLine == false) {
+
+      location.replace("../noInternet/internet.html");
+
+    }
+
+    var today = new Date();
+var d = String(today.getDate()).padStart(2, '0');
+var mon = String(today.getMonth() + 1).padStart(2, '0');
+var yyyy = today.getFullYear();
+
+
+	function currentTime() {
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
+
+  if(hh === 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + " " + session + "," + " " + d + " " + monthNames[date.getMonth()];;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ currentTime() }, 1000);
+}
+
+currentTime();
+
+function turnStuffBlack() {
+
+  var time = document.querySelector('.time');
+  var cont = document.querySelector('.cont');
+  var sche = document.querySelector('.sche');
+  var phy = document.querySelector('.phy');
+  var chem = document.querySelector('.chem');
+  var game = document.querySelector('.game');
+
+  time.style.color = "#000";
+  cont.style.color = "#000";
+  sche.style.color = "#000";
+  phy.style.color = "#000";
+  chem.style.color = "#000";
+  game.style.color = "#000";
+
+  document.body.style.color = "#000";
+  document.getElementById("codeIn").style.color = "#000";
+
+
+} 
+
+
+function turnStuffWhite() {
+
+  var time = document.querySelector('.time');
+  var cont = document.querySelector('.cont');
+  var sche = document.querySelector('.sche');
+  var phy = document.querySelector('.phy');
+  var chem = document.querySelector('.chem');
+  var game = document.querySelector('.game');
+
+  time.style.color = "#fff";
+  cont.style.color = "#fff";
+  sche.style.color = "#fff";
+  phy.style.color = "#fff";
+  chem.style.color = "#fff";
+  game.style.color = "#fff";
+
+  document.body.style.color = "#fff";
+  document.getElementById("codeIn").style.color = "#fff";
+
+
+} 
+
+function normal() {
+
+  document.body.style.backgroundImage = "";
+  
+  turnStuffBlack();
+
+}
+
+
+function rock() {
+
+  document.body.style.backgroundImage = "url(backgrounds/searock.png)";
+  
+ turnStuffWhite();
+
+}
+
+function flowers() {
+
+  document.body.style.backgroundImage = "url(backgrounds/sungradient.png)";
+  
+ turnStuffWhite();
+
+}
+
+function more() {
+
+  document.body.style.backgroundImage = "url(backgrounds/water.png)";
+  
+ turnStuffWhite();
+
+}
+
+
+function moretho() {
+
+  document.body.style.backgroundColor = "#000";
+  
+ turnStuffWhite();
+
+}
+
+</script>
+</html>

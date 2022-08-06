@@ -1,0 +1,158 @@
+.view h1 {
+	font-family: Montserrat;
+}
+
+body {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6F6F6;
+  font-family: 'Neue Power', sans-serif;
+  position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -26em; 
+    margin-left: -30em; 
+}
+
+.list {
+margin-top: 1pc;
+}
+
+th {
+	font-weight: 100;
+	font-size: 2.5pc;
+  font-family: 'Neue Power', sans-serif;
+
+}
+
+.title {
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.meetSch {
+	background-color: #F4F4F4;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin-top: 3pc;
+  	width: 15pc;
+  	border-radius: 1pc;
+}
+
+.time {
+	color: #B2B2B2;
+	font-size: 0.9pc;
+	margin-top: -0.9pc;
+	margin-left: -2pc;
+}
+
+.dot {
+	width: 10px;
+	height: 10px;	
+}
+
+
+table {
+	background-color: #fff;
+	width: 13pc;
+	border-radius: 30px;
+	padding: 1pc;
+	height: 10pc;
+}
+
+.listb {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	text-align: center;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+h4 {
+	font-family: Montserrat;
+}
+
+img {
+	width: 10pc;
+
+}
+
+p {
+	font-weight: 600;
+	font-family: Montserrat;
+}
+
+a {
+	text-decoration: none;
+	color: #009DFF;
+	font-family: Montserrat;
+}
+
+.add {
+	background-color: #0080ED;
+	color: #fff;
+}
+
+.active {
+	background-color: #3DED65;
+	color: #fff;
+}
+
+button {
+	border: none;
+  color: #000;
+  padding: 15px 50px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 15pc;
+  cursor: pointer;
+  border-radius: 0.8pc;
+  background-color: #EBEBEB;
+  font-weight: bold;
+}
+
+.call {
+	margin-top: 1pc;
+	border: none;
+  color: #fff;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1pc;
+  width: 2pc;
+  cursor: pointer;
+  border-radius: 100pc;
+  background-color: #3DED65;
+  font-weight: bold;
+}
+
+input {
+	text-align: center;
+	border: solid 2px #EFEFEF;
+	height: 40px;
+	width: 15pc;
+	border-radius: 10px;
+	font-size: 0.9pc;
+	font-weight: 600;
+	margin-top: 2pc;
+}
+
+
+.view {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	background-color: #fff;
+	width: 47pc;
+	height: 47pc;
+	margin: 2pc;
+	font-size: 1.1pc;
+	border-radius: 2pc;
+	font-weight: 100;
+}
